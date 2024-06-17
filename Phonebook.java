@@ -35,7 +35,7 @@ public class Phonebook {
         int temp;
         HashMap<String, Integer> hmTemp = new HashMap<>();
 
-        for (Map.Entry entry : phonebook.entrySet()) {
+        for (@SuppressWarnings("rawtypes") Map.Entry entry : phonebook.entrySet()) {
             nameTemp = (String) entry.getKey();
             // temp = (int) entry.getValue();
             temp = phonebook.get(nameTemp).size();
